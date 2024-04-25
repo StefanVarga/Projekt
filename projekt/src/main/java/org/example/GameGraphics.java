@@ -10,14 +10,14 @@ public class GameGraphics extends JFrame {
         this.logic = logic;
         new Draw();
 
-        setSize(1920, 1080);
+        setSize(1400, 800);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
         setTitle("Game");
     }
 
-    public void update(GameLogic logic) {
+    public void render(GameLogic logic) {
         this.logic = logic;
         repaint();
     }
